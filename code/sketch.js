@@ -12,7 +12,7 @@ var startNum = 0x00;
 
 function setup() {
   createCanvas(600, 500);
-  frameRate(10);
+  frameRate(5);
   display = new Display(
     x,
     y,
@@ -28,4 +28,5 @@ function draw() {
   display.show();
   display.showRect();
   display.incValue();
+  display.update();
 }

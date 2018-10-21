@@ -29,6 +29,12 @@ function Display(x_, y_, w_, h_, b_, numSegs_, startNum_) {
       "0")
   }
 
+  this.update = function() {
+    for (var i = 0; i < this.digets.length; i++) {
+      this.digets[i].update();
+    }
+  }
+
   this.show = function() {
     for (var i = 0; i < this.digets.length; i++) {
       this.digets[i].show();
